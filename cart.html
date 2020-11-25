@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <title> E-commerce</title>
+</head>
+
+<body>
+
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="main.html">
+                <img src="/images/logo/logo.png" alt="" width="125px">
+            </a>
+        </div>
+    <a href="cart.html">
+            <img src="/images/logo/cart.png" alt="" width="38px" height="30px">
+        </a>
+        <img src="/images/logo/menu.png" class="menu-icon" alt="" onclick="menutoggle()">
+    </div>
+    </div>
+    </div>
+    <div class="cart-content">
+        <div class="small-cont" cart-page>
+            <div class="cart">
+                <span class="close-cart"><i class="far fa-window-close"></i></span>
+                <h2>your cart</h2>
+            </div>
+            <table>
+                <tr>
+                    <th>Products</th>
+                    <th>Quantity</th>
+                    <th>Sub Total</th>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="/images/buy-1.jpg" alt="">
+                            <div>
+                                <p>Title</p>
+                                <small class="item-price">$price</small><br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td></td>
+                </tr>
+            </table>
+            <div class="total-price">
+                <table>
+               
+                <tr>
+                        <td>Grand Total</td>
+                        <td class="cart-total">$56787</td>
+                    </tr>
+                
+
+                </table>
+                <button class="clear-cart">clear cart</button>
+            </div>
+        </div>
+</div>
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download Download our App Download our App</p>
+                </div>
+                <div class="footer-col-2">
+                    <img src="/images/logo/logo-white.png" alt="">
+                    <p>Download Download our Appd our App Download our App</p>
+                    <div class="app-logo">
+                        <img src="/images/logo/app-store.png" alt="">
+                        <img src="/images/logo/play-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-3">
+                    <h3>useful Link</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright &copy; 2020 www.you.com</p>
+        </div>
+    </div>
+
+
+    
+
+
+    <script>
+        var menuItems = document.getElementById('menuItems')
+
+        menuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (menuItems.style.maxHeight == "0px") {
+                (menuItems.style.maxHeight = "200px")
+            } else {
+                (menuItems.style.maxHeight = "0px")
+            }
+        }
+
+    </script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

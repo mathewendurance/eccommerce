@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <title> E-commerce</title>
+</head>
+
+<body>
+    <!-- TOP NAVBAR-->
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/images/logo/logo.png" alt="" width="125px">
+                </a>
+            </div>
+            <nav>
+                <ul id="menuItems">
+                    <li><a href="main.html">home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">contacts</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <div class="cart-btn">
+                <span></span>
+                <img src="/images/logo/cart.png" alt="" width="38px" height="30px"></i>
+                </span>
+                <div class="cart-items">0</div>
+            </div>
+            <img src="/images/logo/menu.png" class="menu-icon" alt="" onclick="menutoggle()">
+        </div>
+    </div>
+    <!-- END TOP NAVBAR-->
+    
+    <!--PRODUCT DISPLAY-->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>All Product</h2>
+            <select>
+                <option>Default Sorting</option>
+                <option>price low to high</option>
+                <option>price High to Low</option>
+                <option>Popularity</option>
+                <option>Sales</option>
+            </select>
+      
+            <div class="products row">
+                
+            </div>
+          
+        
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>&#8594</span>
+        </div>
+    </div>
+
+    </div>
+    <!--END PRODUCT DISPLAY-->
+
+    <!--PRODUCT DETAIL DISPLAY-->    
+    <div class="product-overlay">
+        <div class="product-details">
+            <span id= "close-product" class="close-productOverlay">
+                <i class="fa fa-window-close"></i>
+            </span>
+            <div class="small-cont single-product">
+            
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--END PRODUCT DETAIL DISPLAY-->
+
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="close-cart"><i class="fa fa-window-close"></i></span>
+            <h2>your cart</h2>
+        <div class="cart-box">
+            <div class="cart-content">
+                <!-- cart item -->
+                <!-- <div class="cart-item">
+                <img src="./images/product-1.jpeg" alt="product" />
+                <div>
+                  <h4>queen bed</h4>
+                  <h5>$9.00</h5>
+                  <span class="remove-item">remove</span>
+                </div>
+                <div>
+                  <i class="fas fa-chevron-up"></i>
+                  <p class="item-amount">
+                    1
+                  </p>
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+              </div> -->
+                <!-- cart item -->
+            </div>
+        </div>
+            <div class="cart-footer">
+                <h3>your total : $<span class="cart-total">0</span></h3>
+                <button class="clear-cart banner-btn">clear cart</button><br><br>
+
+                <button class="cash-cart banner-btn">cash cart</button>
+                
+            </div>
+        </div>
+    </div>
+<!-- end of cart -->
+
+<div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download Download our App Download our App</p>
+                </div>
+                <div class="footer-col-2">
+                    <img src="/images/logo/logo-white.png" alt="">
+                    <p>Download Download our Appd our App Download our App</p>
+                    <div class="app-logo">
+                        <img src="/images/logo/app-store.png" alt="">
+                        <img src="/images/logo/play-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-3">
+                    <h3>useful Link</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright &copy; 2020 www.you.com</p>
+        </div>
+</div>
+
+
+                    <!--products details-->
+
+
+
+
+    <script>
+        var menuItems = document.getElementById('menuItems')
+
+        menuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (menuItems.style.maxHeight == "0px") {
+                (menuItems.style.maxHeight = "200px")
+            } else {
+                (menuItems.style.maxHeight = "0px")
+            }
+        }
+
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
